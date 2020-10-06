@@ -5,12 +5,14 @@ import Exercise2 from "./pages/Exercise2";
 import Exercise3 from "./pages/Exercise3";
 import Exercise4 from "./pages/Exercise4";
 import Exercise5 from "./pages/Exercise5";
+import Exercise6 from "./pages/Exercise6";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/exercise-6" component={Exercise6} />
         <Route path="/exercise-5" component={Exercise5} />
         <Route path="/exercise-4" component={Exercise4} />
         <Route path="/exercise-3" component={Exercise3} />
