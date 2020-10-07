@@ -1,5 +1,6 @@
 import React from "react";
 import posts from "../../mocks/posts";
+import "./index.css";
 
 function PostList() {
   return (
@@ -22,9 +23,9 @@ function Post(props) {
   const { title, description, author } = props;
   return (
     <div className="post">
-      <h1>{title}</h1>
-      <p>{description}</p>
-      <p>Author: {author}</p>
+      <h1 className="post-title">{title}</h1>
+      <p className="post-description">{description}</p>
+      <p className="post-author">Author: {author}</p>
       <ActionMenu />
     </div>
   );
@@ -32,9 +33,9 @@ function Post(props) {
 
 function ActionMenu() {
   return (
-    <div className="actions">
-      <button>edit</button>
-      <button>delete</button>
+    <div className="post-actions">
+      <button className="post-edit-action-button">Edit</button>
+      <button className="post-delete-action-button">Delete</button>
     </div>
   );
 }

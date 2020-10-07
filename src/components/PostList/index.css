@@ -1,0 +1,40 @@
+.post-list {
+  margin: 0 50px;
+}
+
+.post {
+  background-color: rgb(249, 239, 226);
+  border-radius: 10px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.post-title {
+  margin: 20px 0;
+  color: rgb(219, 158, 79);
+}
+
+.post-description {
+  margin: 20px 0;
+  color: rgb(219, 158, 79);
+}
+
+.post-author {
+  margin: 20px 0;
+  color: rgb(219, 158, 79);
+}
+
+.post-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.post-edit-action-button,
+.post-delete-action-button {
+  width: 100px;
+  font-size: 20px;
+}
+
+.post-delete-action-button {
+  margin-left: 20px;
+}

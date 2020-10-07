@@ -64,23 +64,30 @@ class Form extends React.Component {
   render() {
     return (
       <form className="form-container" onSubmit={this.handleSubmit}>
-        <label htmlFor="firstname">First Name</label>
-        <input
-          id="firstname"
-          name="firstname"
-          type="text"
-          value={this.state.firstname}
-          onChange={this.handleFirstnameChange}
-        />
-        <label htmlFor="lastname">Last Name</label>
-        <input
-          id="lastname"
-          name="lastname"
-          type="text"
-          value={this.state.lastname}
-          onChange={this.handleLastnameChange}
-        />
-        <span>Window Width: {this.state.width}</span>
+        <div className="field-container">
+          <label htmlFor="firstname">First Name</label>
+          <input
+            id="firstname"
+            name="firstname"
+            type="text"
+            value={this.state.firstname}
+            onChange={this.handleFirstnameChange}
+          />
+        </div>
+        <div className="field-container">
+          <label htmlFor="lastname">Last Name</label>
+          <input
+            id="lastname"
+            name="lastname"
+            type="text"
+            value={this.state.lastname}
+            onChange={this.handleLastnameChange}
+          />
+        </div>
+
+        <div className="field-container">
+          <span>Window Width: {this.state.width}</span>
+        </div>
         <button type="submit">Submit</button>
       </form>
     );

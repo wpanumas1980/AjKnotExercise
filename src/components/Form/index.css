@@ -1,5 +1,29 @@
 .form-container {
   display: flex;
   flex-direction: column;
-  max-width: 300px;
+  align-items: center;
+  font-size: 30px;
+  color: rgb(219, 158, 79);
+}
+
+.field-container {
+  margin: 20px 0;
+}
+
+.field-container > label {
+  margin-right: 20px;
+}
+
+.field-container input {
+  height: 45px;
+  width: 350px;
+  padding: 20px;
+  font-size: 25px;
+  color: rgb(219, 158, 79);
+  border: 3px solid rgb(216, 178, 128);
+}
+
+.field-container input:focus {
+  border: 3px solid rgb(216, 178, 128);
+  outline: none;
 }

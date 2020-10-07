@@ -1,0 +1,16 @@
+.instruction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  font-size: 40px;
+}
+
+.instruction-heading {
+  color: rgb(219, 158, 79);
+  margin-bottom: 20px;
+}
+
+.instruction-description {
+  color: rgb(216, 178, 128);
+}

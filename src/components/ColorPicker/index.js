@@ -1,4 +1,5 @@
 import React from "react";
+import "./index.css";
 
 class ColorPicker extends React.Component {
   constructor(props) {
@@ -18,8 +19,13 @@ class ColorPicker extends React.Component {
 
   render() {
     return (
-      <div>
-        <h1 style={{ color: this.state.color }}>COLORFUL</h1>
+      <div className="color-picker-container">
+        <h2
+          className="color-picker-heading"
+          style={{ color: this.state.color }}
+        >
+          COLORFUL
+        </h2>
         <input type="color" onChange={this.handleColorChange} />
       </div>
     );
