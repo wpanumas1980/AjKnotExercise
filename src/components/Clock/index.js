@@ -33,7 +33,7 @@ class Clock extends React.Component {
         style={{
           textAlign: "center",
           fontSize: "60px",
-          color: "rgb(219, 158, 79)",
+          color: "var(--main-branding-color-500)",
         }}
       >
         {this.state.date.toLocaleTimeString()}

@@ -34,8 +34,9 @@ function Post(props) {
 function ActionMenu() {
   return (
     <div className="post-actions">
-      <button className="post-edit-action-button">Edit</button>
-      <button className="post-delete-action-button">Delete</button>
+      <span className="post-user">You are ...</span>
+      <button className="button post-edit-action-button">Edit</button>
+      <button className="button post-delete-action-button">Delete</button>
     </div>
   );
 }

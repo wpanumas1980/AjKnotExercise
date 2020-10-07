@@ -7,10 +7,10 @@
 }
 
 .instruction-heading {
-  color: rgb(219, 158, 79);
+  color: var(--main-branding-color-500);
   margin-bottom: 20px;
 }
 
 .instruction-description {
-  color: rgb(216, 178, 128);
+  color: var(--main-branding-color-400);
 }

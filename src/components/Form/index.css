@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   font-size: 30px;
-  color: rgb(219, 158, 79);
+  color: var(--main-branding-color-500);
 }
 
 .field-container {
@@ -19,11 +19,11 @@
   width: 350px;
   padding: 20px;
   font-size: 25px;
-  color: rgb(219, 158, 79);
-  border: 3px solid rgb(216, 178, 128);
+  color: var(--main-branding-color-500);
+  border: 3px solid var(--main-branding-color-400);
 }
 
 .field-container input:focus {
-  border: 3px solid rgb(216, 178, 128);
+  border: 3px solid var(--main-branding-color-400);
   outline: none;
 }

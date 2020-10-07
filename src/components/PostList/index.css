@@ -3,7 +3,7 @@
 }
 
 .post {
-  background-color: rgb(249, 239, 226);
+  background-color: var(--main-branding-color-200);
   border-radius: 10px;
   padding: 40px;
   margin: 40px 0;
@@ -11,22 +11,28 @@
 
 .post-title {
   margin: 20px 0;
-  color: rgb(219, 158, 79);
+  color: var(--main-branding-color-500);
 }
 
 .post-description {
   margin: 20px 0;
-  color: rgb(219, 158, 79);
+  color: var(--main-branding-color-500);
 }
 
 .post-author {
   margin: 20px 0;
-  color: rgb(219, 158, 79);
+  color: var(--main-branding-color-500);
+}
+
+.post-user {
+  color: var(--main-branding-color-500);
+  margin-right: 50px;
 }
 
 .post-actions {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .post-edit-action-button,

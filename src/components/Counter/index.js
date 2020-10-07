@@ -42,16 +42,22 @@ class Counter extends React.Component {
       <div className="counter-app">
         <h2 className="counter-value">{this.state.counter}</h2>
         <div className="counter-menu">
-          <button className="counter-add-button" onClick={this.addCounter}>
+          <button
+            className="button counter-add-button"
+            onClick={this.addCounter}
+          >
             +
           </button>
           <button
-            className="counter-subtract-button"
+            className="button counter-subtract-button"
             onClick={this.subtractCounter}
           >
             -
           </button>
-          <button className="counter-reset-button" onClick={this.resetCounter}>
+          <button
+            className="button counter-reset-button"
+            onClick={this.resetCounter}
+          >
             reset
           </button>
         </div>

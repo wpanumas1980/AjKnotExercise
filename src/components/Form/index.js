@@ -88,7 +88,9 @@ class Form extends React.Component {
         <div className="field-container">
           <span>Window Width: {this.state.width}</span>
         </div>
-        <button type="submit">Submit</button>
+        <button className="button" type="submit">
+          Submit
+        </button>
       </form>
     );
   }

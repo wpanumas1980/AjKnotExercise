@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@400;700&display=swap");
 
+:root {
+  --main-branding-color-500: rgb(219, 158, 79);
+  --main-branding-color-400: rgb(216, 178, 128);
+  --main-branding-color-300: rgb(228, 208, 183);
+  --main-branding-color-200: rgb(249, 239, 226);
+
+  --second-branding-color-500: rgb(79, 86, 219);
+  --second-branding-color-400: rgb(108, 113, 217);
+  --second-branding-color-300: rgb(153, 156, 215);
+  --second-branding-color-200: rgb(199, 200, 219);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,16 +30,21 @@ h1 {
   font-family: "Sansita Swashed", cursive;
 }
 
-button {
+.button {
   width: 250px;
   height: 50px;
   font-size: 30px;
-  background-color: rgb(219, 158, 79);
+  background-color: var(--main-branding-color-500);
   color: whitesmoke;
-  border: 1px solid rgb(228, 208, 183);
+  border: 1px solid var(--main-branding-color-300);
   border-radius: 10px;
   outline: none;
   cursor: pointer;
+}
+
+.button-second-theme {
+  background-color: var(--second-branding-color-500);
+  border: 1px solid var(--second-branding-color-300);
 }
 
 code {
