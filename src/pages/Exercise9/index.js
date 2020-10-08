@@ -3,16 +3,16 @@ import Instruction from "../../components/Instruction";
 import PostList from "../../components/PostList";
 import mockedPosts from "../../mocks/posts";
 
-function Exercise8() {
+function Exercise9() {
   return (
     <div className="page-container">
       <Instruction
-        topic="Posts App Theme"
-        description="Change theme of posts app with Context API"
+        topic="Posts App (useState)"
+        description="Make Post App be able to Add / Edit / Delete with useState"
       />
       <PostList posts={mockedPosts} />
     </div>
   );
 }
 
-export default Exercise8;
+export default Exercise9;
