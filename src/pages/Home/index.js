@@ -17,9 +17,10 @@ function Home() {
         <Link to="/exercise-2">Exercise #2 - Color Wheel (Refactor)</Link>
         <Link to="/exercise-3">Exercise #3 - Clock (Refactor)</Link>
         <Link to="/exercise-4">Exercise #4 - Monster Table (Refactor)</Link>
-        <Link to="/exercise-5">Exercise #5 - Form (Refactor)</Link>
-        <Link to="/exercise-6">Exercise #6 - Posts (Context API)</Link>
-        <Link to="/exercise-7">Exercise #7 - Posts (useReducer)</Link>
+        <Link to="/exercise-5">Exercise #5 - SignupForm (Refactor)</Link>
+        <Link to="/exercise-6">Exercise #6 - ContactForm (Custom Hooks)</Link>
+        <Link to="/exercise-7">Exercise #7 - Posts (Context API)</Link>
+        <Link to="/exercise-7">Exercise #8 - Posts (useReducer)</Link>
       </div>
     </div>
   );

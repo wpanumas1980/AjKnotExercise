@@ -1,11 +1,11 @@
 import React from "react";
-import posts from "../../mocks/posts";
+
 import "./index.css";
 
-function PostList() {
+function PostList(props) {
   return (
     <div className="post-list">
-      {posts.map((post) => {
+      {props.posts.map((post) => {
         return (
           <Post
             key={post.id}

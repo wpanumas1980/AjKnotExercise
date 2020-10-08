@@ -1,18 +1,18 @@
-import React, { useState } from "react";
-import PostList from "../../components/PostList";
+import React from "react";
+import ContactForm from "../../components/ContactForm";
 import Instruction from "../../components/Instruction";
+import "./index.css";
 
 function Exercise6() {
-  const [user, setUser] = useState("John");
   return (
-    <div className="container">
-      <div className="theme-button"></div>
+    <div className="exercise-5-container">
       <Instruction
-        topic="Posts App"
-        description="Action menu need user state to show 'You are John' instead of 'You are ...'"
+        topic="Contact Form App"
+        description="Refactor Contact Form at components/ContactForm/index.js List into Hook fashion"
       />
-
-      <PostList />
+      <div className="exercise-5-content">
+        <ContactForm />
+      </div>
     </div>
   );
 }

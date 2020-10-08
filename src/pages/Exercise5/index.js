@@ -1,5 +1,5 @@
 import React from "react";
-import Form from "../../components/Form";
+import SignupForm from "../../components/SignupForm";
 import Instruction from "../../components/Instruction";
 import "./index.css";
 
@@ -7,11 +7,11 @@ function Exercise5() {
   return (
     <div className="exercise-5-container">
       <Instruction
-        topic="Signup App"
-        description="Refactor Signup at components/Form/index.js List into Hook fashion"
+        topic="Signup Form App"
+        description="Refactor Signup Form at components/SignupForm/index.js List into Hook fashion"
       />
       <div className="exercise-5-content">
-        <Form />
+        <SignupForm />
       </div>
     </div>
   );

@@ -6,12 +6,16 @@ import Exercise3 from "./pages/Exercise3";
 import Exercise4 from "./pages/Exercise4";
 import Exercise5 from "./pages/Exercise5";
 import Exercise6 from "./pages/Exercise6";
+import Exercise7 from "./pages/Exercise7";
+import Exercise8 from "./pages/Exercise8";
 import Home from "./pages/Home";
 
 function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/exercise-8" component={Exercise8} />
+        <Route path="/exercise-7" component={Exercise7} />
         <Route path="/exercise-6" component={Exercise6} />
         <Route path="/exercise-5" component={Exercise5} />
         <Route path="/exercise-4" component={Exercise4} />
