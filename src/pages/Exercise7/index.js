@@ -9,11 +9,11 @@ function Exercise7() {
   const [posts, setPosts] = useState(mockedPosts);
 
   return (
-    <div className="container">
+    <div className="page-container">
       <div className="theme-button"></div>
       <Instruction
         topic="Posts App"
-        description="Action menu need user state to show 'You are John' instead of 'You are ...'"
+        description="Action menu need user state to show 'You are John' instead of 'You are ...', So Context API ?"
       />
       <PostList posts={posts} />
     </div>

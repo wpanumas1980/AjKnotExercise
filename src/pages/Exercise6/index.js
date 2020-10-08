@@ -5,7 +5,7 @@ import "./index.css";
 
 function Exercise6() {
   return (
-    <div className="exercise-5-container">
+    <div className="page-container">
       <Instruction
         topic="Contact Form App"
         description="Refactor Contact Form at components/ContactForm/index.js List into Hook fashion"

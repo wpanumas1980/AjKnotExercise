@@ -5,7 +5,7 @@ import monsters from "../../mocks/monsters";
 
 function Exercise4() {
   return (
-    <div>
+    <div className="page-container">
       <Instruction
         topic="Monster List Table App"
         description="Refactor Monster Table at components/MonsterTable/index.js List into Hook fashion"

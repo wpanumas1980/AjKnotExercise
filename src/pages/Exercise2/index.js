@@ -4,7 +4,7 @@ import ColorPicker from "../../components/ColorPicker";
 
 function Exercise2() {
   return (
-    <div>
+    <div className="page-container">
       <Instruction
         topic="Color Picker App"
         description="Refactor Color Picker at components/ColorPicker/index.js in Hook fashion"

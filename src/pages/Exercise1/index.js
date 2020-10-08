@@ -5,7 +5,7 @@ import "./index.css";
 
 function Exercise1() {
   return (
-    <div className="excercise-1-container">
+    <div className="page-container">
       <Instruction
         topic="Counter App"
         description="Refactor Counter App at components/Counter/index.js in Hook fashion"
