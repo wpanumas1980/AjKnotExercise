@@ -1,6 +1,82 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./index.css";
 
+function SignupForm() {
+  const [width, setWidth] = useState(window.innerWidth);
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
+
+  const handleResize = () => {
+    setWidth(window.innerWidth);
+    // console.log(window.innerWidth)
+  }
+
+  const handleFirstnameChange = (e) => {
+    setFirstName(e.target.value);
+  }
+
+  const handleLastnameChange = (e) => {
+    setLastName(e.target.value);
+  }
+
+  const resetForm = () => {
+    setFirstName("")
+    setLastName("")
+  }
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    alert(JSON.stringify({
+      firstname,
+      lastname,
+
+    }));
+    resetForm();
+  }
+  useEffect(() => {
+   window.addEventListener("resize",handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    }
+  }, [width])
+
+  useEffect(() => {
+    document.title = `${firstname} ${lastname}`;
+  }, [firstname, lastname])
+  return (
+    <form className="form-container" onSubmit={handleSubmit}>
+      <div className="field-container">
+        <label htmlFor="firstname">First Name</label>
+        <input
+          id="firstname"
+          name="firstname"
+          type="text"
+          value={firstname}
+          onChange={handleFirstnameChange}
+        />
+      </div>
+      <div className="field-container">
+        <label htmlFor="lastname">Last Name</label>
+        <input
+          id="lastname"
+          name="lastname"
+          type="text"
+          value={lastname}
+          onChange={handleLastnameChange}
+        />
+      </div>
+
+      <div className="field-container">
+        <span>Window Width: {width}</span>
+      </div>
+      <button className="button" type="submit">
+        Submit
+      </button>
+    </form>
+  );
+}
+export default SignupForm;
+/*
 class SignupForm extends React.Component {
   constructor(props) {
     super(props);
@@ -97,3 +173,4 @@ class SignupForm extends React.Component {
 }
 
 export default SignupForm;
+*/

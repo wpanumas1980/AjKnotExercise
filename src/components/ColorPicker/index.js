@@ -1,6 +1,22 @@
-import React from "react";
+import React,{useState} from "react";
 import "./index.css";
 
+function ColorPicker() {
+  const[color,handleColorChange] = useState("")
+  return (
+    <div className="color-picker-container">
+      <h2
+        className="color-picker-heading"
+        style={{color:color}}
+      >
+        COLORFUL(Refactor)
+      </h2>
+      <input type="color" onChange={(e)=>{handleColorChange(e.target.value)}} />
+    </div>
+  );
+}
+
+/*
 class ColorPicker extends React.Component {
   constructor(props) {
     super(props);
@@ -31,5 +47,8 @@ class ColorPicker extends React.Component {
     );
   }
 }
+
+export default ColorPicker;
+*/
 
 export default ColorPicker;

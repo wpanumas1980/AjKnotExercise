@@ -1,15 +1,25 @@
 import React, { useState } from "react";
 import "./index.css";
 
+function useInputForm(defaultValue) {
+  const [value, setValue] = useState(defaultValue);
+
+  function handleValueChange(e) {
+    setValue(e.target.value);
+  }
+
+  return {
+    value,
+    handleValueChange
+  }
+}
+
 function ContactForm() {
-  const [firstname, setFirstname] = useState("");
+  // const [firstname, setFirstname] = useState("");
+  const firstname = useInputForm("")
   const [lastname, setLastname] = useState("");
   const [complain, setComplain] = useState("");
   const [ratings, setRatings] = useState("");
-
-  function handleFirstnameChange(e) {
-    setFirstname(e.target.value);
-  }
 
   function handleLastnameChange(e) {
     setLastname(e.target.value);
@@ -27,7 +37,7 @@ function ContactForm() {
     e.preventDefault();
     alert(
       JSON.stringify({
-        firstname,
+        firstname: firstname.value,
         lastname,
         ratings,
         complain,
@@ -37,7 +47,7 @@ function ContactForm() {
   }
 
   function resetForm() {
-    setFirstname("");
+    // setFirstname("");
     setLastname("");
     setRatings("");
     setComplain("");
@@ -51,8 +61,8 @@ function ContactForm() {
           id="firstname"
           name="firstname"
           type="text"
-          value={firstname}
-          onChange={handleFirstnameChange}
+          value={firstname.value}
+          onChange={firstname.handleValueChange}
         />
       </div>
       <div className="field-container">
